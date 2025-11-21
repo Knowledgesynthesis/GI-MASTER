@@ -19,7 +19,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
     <div className="min-h-screen flex flex-col bg-background">
       {/* Header */}
       <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-        <div className="container flex h-16 items-center justify-between px-4">
+        <div className="container mx-auto flex h-16 items-center justify-between px-4">
           <Link to="/" className="flex items-center space-x-2">
             <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary text-primary-foreground font-bold text-xl">
               GI
@@ -86,14 +86,14 @@ export function Layout({ children }: { children: React.ReactNode }) {
 
       {/* Main Content */}
       <main className="flex-1">
-        <div className="container px-4 py-6 md:py-8">
+        <div className="container mx-auto px-4 py-6 md:py-8">
           {children}
         </div>
       </main>
 
       {/* Footer */}
       <footer className="border-t py-6 md:py-8">
-        <div className="container px-4 text-center text-sm text-muted-foreground">
+        <div className="container mx-auto px-4 text-center text-sm text-muted-foreground">
           <p>GI Master - Interactive GI Emergency & Chronic Disease Learning Platform</p>
           <p className="mt-2">For educational purposes only. Not for clinical decision-making.</p>
         </div>
